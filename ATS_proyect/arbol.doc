@@ -1,0 +1,34 @@
+Listado de rutas de carpetas para el volumen OS
+El n£mero de serie del volumen es 868E-528C
+C:.
+|   arbol.doc
+|   
++---Usuario
+|   |   Main.py
+|   |   
+|   +---Administrador
+|   |   +---Consultar_Administrador
+|   |   |       Administrador_Loggeado.py
+|   |   |       
+|   |   \---Iniciar_Sesion
+|   |       |   Iniciar_Sesion.py
+|   |       |   
+|   |       +---Consultar
+|   |       |       Consultar.py
+|   |       |       
+|   |       +---Modificar
+|   |       |       Modificar.py
+|   |       |       ModificarV2.py
+|   |       |       
+|   |       \---Registrar
+|   |               Registrar.py
+|   |               
+|   \---Almacenista
+|       +---Consultar_Almacenista
+|       \---Entregar
+|               Entregar.py
+|               
+\---__pycache__
+        Administrador_Loggeado.cpython-38.pyc
+        Iniciar_Sesion.cpython-38.pyc
+        
