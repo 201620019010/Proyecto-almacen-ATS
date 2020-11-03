@@ -1,11 +1,10 @@
 import pymysql
-import Administrador_Loggeado
+from Consultar_Administrador.Administrador_Loggeado import Menu_Administrador_Loggeado
 
 def Acceder():
 
     usuario = input("Ingresar Usuario: ")
     contraseña = input("Ingresar Contraseña: ")
-    instancia = Administrador_Loggeado()
 
     try:
         conexion = pymysql.connect(host='localhost',
@@ -19,7 +18,7 @@ def Acceder():
             
                 consulta = "SELECT * FROM Login WHERE username = %s AND password = %s;"
                 cursor.execute(consulta, (usuario, contraseña))
-                instancia.Menu_Administrador_Loggeado()
+                print(Menu_Administrador_Loggeado())
                 result = cursor.fetchone()
                 print(result)
                 conexion.commit()

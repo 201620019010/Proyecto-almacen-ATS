@@ -1,3 +1,7 @@
+from Administrador.Iniciar_Sesion.Iniciar_Sesion import Acceder
+from Administrador.Consultar_Administrador.Administrador_Loggeado import Menu_Administrador_Loggeado
+from Almacenista.Consultar_Almacenista import Consultar_Almacenista
+from Almacenista.Entregar.Entregar import Entregas
 
 def Inicio():
 
@@ -17,25 +21,23 @@ def Inicio_Administrador():
     print("[3] Iniciar Sesión")
     print("[4] Consultar")
     respuesta = int(input("Ingrese un valor: "))
-    #instancia3 = Iniciar_Sesion.Acceder()
-    #instancia4 = Consultar()
+    
     if(respuesta == 3):
-        print(Iniciar_Sesion.Acceder())
+        print(Acceder())
 
     if(respuesta == 4):
-        print(instancia4.ConsultarAdministrador())
+        print(Menu_Administrador_Loggeado())
 
 def Inicio_Almacenista():
 
     print("[5] Consultar")
     print("[6] Entregar")
     eleccion = int(input("Ingrese un valor: "))
-    instancia5 = Consultar()
-    instancia6 = Entregar()
+    
     if(eleccion == 5):
-        print(instancia5.ConsultarAlmacenista())
+        print(Consultar_Almacenista())
 
     if(eleccion == 6):
-        print(instancia6.Entregas())
+        print(Entregas())
 
 Inicio()
